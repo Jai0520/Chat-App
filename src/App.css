@@ -1,0 +1,398 @@
+/* Color Palate and fonts */
+
+:root {
+  --primary: #128C7E;
+  --accent: #087266;
+  --primary-dark: #116F64;
+  --secondary: #DCF8C6;
+  --white: #ffffff;
+  --dark: #075E54;
+  --light-gray: #afafaf;
+  --off-white: #ECE5DD;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Register and Login page CSS start */
+
+.formContainer{
+  background-color: var(--secondary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer .formWrapper{
+  background-color: var(--white);
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.formContainer .formWrapper .logo{
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.formContainer .formWrapper .title{
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.formContainer .formWrapper form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formContainer .formWrapper button{
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper p{
+  color: var(--primary);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.formContainer .formWrapper form input{
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  width: 250px;
+}
+
+.formContainer .formWrapper form input::placeholder{
+  color: var(--light-gray);
+}
+
+.formContainer .formWrapper form label{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper form label img{
+  width: 30px;
+}
+
+/* Register and Login CSS end */
+
+/* App Interface CSS Start */
+
+.home {
+  background-color: var(--secondary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .container{
+  filter: drop-shadow(var(--light-gray) 0px 0px 10px);
+  border-radius: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  overflow: hidden;
+}
+
+/* sidebar CSS start */
+
+.home .sidebar{
+  flex: 1;
+  background-color: var(--primary-dark);
+}
+
+.home .sidebar .navbar{
+  display: flex;
+  align-items: center;
+  background-color: var(--dark);
+  height: 50px;
+  padding: 10px;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+.home .sidebar .navbar .logo{
+  font-weight: bold;
+}
+
+.home .sidebar .navbar .user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .sidebar .navbar .user img{
+  background-color: var(--white);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .sidebar .navbar .user button{
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.home .sidebar .search{
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.home .sidebar .search .searchForm{
+  padding: 10px;
+}
+
+.home .sidebar .search .searchForm input{
+  border: none;
+  width: 100%;
+  color: var(--white);
+  background-color: transparent;
+  outline: none;
+}
+
+.home .sidebar .search .searchForm input::placeholder{
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.home .sidebar .search .userChat{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.home .sidebar .search .userChat:hover{
+  background-color: var(--dark);
+}
+
+.home .sidebar .search .userChat img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .sidebar .search .userChat .userInfo span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home .sidebar .search .userChat .userInfo p{
+  font-size: 14px;
+  color: var(--white);
+  margin: 0 auto;
+}
+
+.home .sidebar .chats .userChat{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.home .sidebar .chats .userChat:hover{
+  background-color: var(--dark);
+}
+
+.home .sidebar .chats .userChat img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .sidebar .chats .userChat .userInfo span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home .sidebar .chats .userChat .userInfo p{
+  font-size: 14px;
+  color: var(--off-white);
+  margin: 0 auto;
+}
+
+/* sidebar CSS end */
+
+/* Chat CSS start */
+
+.home .chat{
+  flex: 2;
+}
+
+.home .chat .chatInfo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  background-color: var(--primary);
+  padding: 10px;
+}
+
+.home .chat .chatInfo img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .chat .chatInfo span{
+  font-weight: bold;
+  color: var(--off-white);
+}
+
+/* Messages and Input CSS start */
+
+.home .chat .messages {
+  background-color: var(--off-white);
+  height: calc(100% - 160px);
+  padding: 10px;
+  overflow: scroll;
+}
+
+/* Sender text CSS start */
+
+.home .chat .messages .message{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.home .chat .messages .message .messageInfo{
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+.home .chat .messages .message .messageInfo span{
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--light-gray);
+}
+
+.home .chat .messages .message .messageInfo img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .chat .messages .message .messageContent{
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .chat .messages .message .messageContent p{
+  background-color: var(--white);
+  padding: 10px 20px;
+  border-radius: 0px 10px 10px 10px;
+  max-width: max-content;
+}
+
+.home .chat .messages .message .messageContent img{
+  max-width: 40%;
+}
+
+/* Sender text CSS end */
+
+/* user sending text CSS start */
+
+.home .chat .messages .owner{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.home .chat .messages .owner .messageContent{
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.home .chat .messages .owner .messageContent p{
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 10px 10px 0px 10px;
+  max-width: max-content;
+}
+
+/* user sending text CSS end */
+
+.home .chat .input {
+  background-color: var(--white);
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .chat .input input{
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: black;
+}
+
+.home .chat .input input::placeholder{
+  font-size: 18px;
+  color: var(--off-white);
+}
+
+.home .chat .input .send{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home .chat .input .send label img{
+  height: 30px;
+  cursor: pointer;
+}
+
+.home .chat .input .send button{
+  border: none;
+  border-radius: 2px;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 10px 15px;
+}
+
+/* Messages and Input CSS end */
+
+/* Chat CSS end */
+
+/* App interface CSS end */
